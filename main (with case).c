@@ -1,6 +1,5 @@
 #include <m8c.h>        // part specific constants and macros
 #include "PSoCAPI.h"    // PSoC API definitions for all User Modules
-#include "psocdynamic.h"	// PSoC API definitions for Dynamic Recongiguration
 #include <stdio.h>
 #include <string.h>
 
@@ -13,9 +12,6 @@ void main(void)
     Counter8_1_Start();       
    
     LCD_1_Start();
-	
-    // Load the receiver configuration
-    LoadConfig_Receiver();
 	
 	RX8_2_Start(RX8_2_PARITY_NONE);
 	
